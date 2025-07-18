@@ -7,13 +7,18 @@ import { fadeIn } from '../variants';
 
 const Banner = () => {
   return (
-    <section className='section' id='home'>
+    <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center ' id='home'>
       <div className='container mx-auto'>
-        <div>
-          <h1>
+        <div className='flex-1 text-center font-secondary lg:text-left'>{/* Main content area */}
+          <motion.h1
+            variants={fadeIn('down', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
             JOÃO <span>PEDRO</span>
-          </h1>
-          <div className='mb-6 text-[36px] lg:text-[60px] font-primary font-semibold uppercase leading-[1]'>
+          </motion.h1>
+          { /* parei aqui */}<motion.div className='mb-6 text-[36px] lg:text-[60px] font-primary font-semibold uppercase leading-[1]'>
             <span className='text-white mr-4'>I am a</span>
             <TypeAnimation
               sequence={[
@@ -29,22 +34,24 @@ const Banner = () => {
               wrapper='span'
               repeat={Infinity}
             />
-          </div>
+          </motion.div>
           <p className='mb-6 text-[36px] lg:text-[41px] font-secondary leading-[1]'>
             I create web applications with a focus on performance and user
             experience.
           </p>
           <div>
-            <button>
-              
+            <button className='btn btn-lg'>
+              Contact Me
             </button>
           </div>
+          <div className='flex gap-6 mt-8'>
+            <a href='https://github.com/jp066' target='_blank' rel='noopener noreferrer'><FaGithub /></a>
+            <a href='https://www.linkedin.com/in/joao-pedro-matos-dev/' target='_blank' rel='noopener noreferrer'><FaLinkedin /></a>
+            <a href='https://instagram.com/jpedrooliveir4' target='_blank' rel='noopener noreferrer'><FaInstagram /></a>
+          </div>
         </div>
-        <div>
-          <img src={Image} alt='Services' />
-        </div>
-      </div>
 
+      </div>
     </section>
   );
 };

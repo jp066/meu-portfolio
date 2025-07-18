@@ -2,9 +2,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Fira Code',
-      secondary: 'Rajdhani',
-      tertiary: 'DM Sans',
+      primary: ['Fira Code', 'monospace'],
+      secondary: ['Rajdhani', 'sans-serif'],
+      tertiary: ['DM Sans', 'sans-serif'],
     },
     container: {
       padding: {
