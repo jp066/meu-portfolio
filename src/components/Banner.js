@@ -18,7 +18,12 @@ const Banner = () => {
             className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
             JOÃO <span>PEDRO</span>
           </motion.h1>
-          { /* parei aqui */}<motion.div className='mb-6 text-[36px] lg:text-[60px] font-primary font-semibold uppercase leading-[1]'>
+          <motion.div
+            variants={fadeIn('down', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='mb-6 text-[36px] lg:text-[60px] font-primary font-semibold uppercase leading-[1]'>
             <span className='text-white mr-4'>I am a</span>
             <TypeAnimation
               sequence={[
@@ -35,20 +40,35 @@ const Banner = () => {
               repeat={Infinity}
             />
           </motion.div>
-          <p className='mb-6 text-[36px] lg:text-[41px] font-secondary leading-[1]'>
+          <motion.p
+            variants={fadeIn('down', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='mb-6 text-[36px] lg:text-[41px] font-secondary leading-[1]'>
             I create web applications with a focus on performance and user
             experience.
-          </p>
-          <div>
+          </motion.p>
+          <motion.div
+            variants={fadeIn('down', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+          >
             <button className='btn btn-lg'>
               Contact Me
             </button>
-          </div>
-          <div className='flex gap-6 mt-8'>
+          </motion.div>
+          <motion.div
+            variants={fadeIn('down', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.7 }}
+            className='flex gap-6 mt-8'>
             <a href='https://github.com/jp066' target='_blank' rel='noopener noreferrer'><FaGithub /></a>
             <a href='https://www.linkedin.com/in/joao-pedro-matos-dev/' target='_blank' rel='noopener noreferrer'><FaLinkedin /></a>
             <a href='https://instagram.com/jpedrooliveir4' target='_blank' rel='noopener noreferrer'><FaInstagram /></a>
-          </div>
+          </motion.div>
         </div>
 
       </div>

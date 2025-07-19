@@ -68,7 +68,7 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#2b6f06] to-[#0d6c3d] font-bold font-primary hover:from-[#ffffff] hover:to-[#42A6E3];
   }
 
   .section {
