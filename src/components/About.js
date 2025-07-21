@@ -13,23 +13,23 @@ const About = () => {
   return (
     <section className='section' id='about' ref={ref}>
       <div className='container mx-auto'>
-        <h2 className='h2 text-accent mb-6'>
-          About me.
+        <h2 className='h2 text-accent mb-4'>
+          Sobre mim.
         </h2>
-        <h3 className='h3 mb-4'>
-          I am a full-stack developer with a passion for creating dynamic and responsive web applications. With expertise in both front-end and back-end technologies, I strive to deliver seamless user experiences and robust functionality.
+        <h3 className='h3 mb-2'>
+          Sou um desenvolvedor full-stack com paixão por criar aplicações web dinâmicas e responsivas. Com experiência em tecnologias tanto de front-end quanto de back-end, busco oferecer experiências de usuário perfeitas e funcionalidades robustas.
         </h3>
-        <p className='mb-4'>
-          I enjoy working with modern technologies and frameworks, and I am always eager to learn new skills and improve my craft. Let's build something amazing together!
+        <p className='mb-1'>
+          Gosto de trabalhar com tecnologias e frameworks modernos, e estou sempre ansioso para aprender novas habilidades e aprimorar meu ofício. Vamos construir algo incrível juntos!
         </p>
         {/* Stats */}
-        <div className='flex gap-x-6 lg:gap-x-10 mt-12'>
+        <div className='flex gap-x-6 lg:gap-x-10 mt-1'>
           <div>
             <div className='text-[40px] font-tertiary text-gradient mb-2'>
-              {inView ? <CountUp start={0} end={3} duration={2} /> : null}
+              {inView ? <CountUp start={0} end={1} duration={2} /> : null}
             </div>
             <div className='font-primary text-sm tracking-[2px]'>
-              Years of Experience
+              Anos de experiência
             </div>
           </div>
           <div>
@@ -37,7 +37,7 @@ const About = () => {
               {inView ? <CountUp start={0} end={4} duration={2} /> : null}
             </div>
             <div className='font-primary text-sm tracking-[2px]'>
-              Projects
+              Projetos
             </div>
           </div>
           <div>
@@ -45,14 +45,9 @@ const About = () => {
               {inView ? <CountUp start={0} end={3} duration={2} /> : null}
             </div>
             <div className='font-primary text-sm tracking-[2px]'>
-              Habilities
+              habilidades
             </div>
           </div>
-        </div>
-        <div>
-          <button>
-
-          </button>
         </div>
       </div>
     </section>

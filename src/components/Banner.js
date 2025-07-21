@@ -24,14 +24,14 @@ const Banner = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
             className='mb-6 text-[36px] lg:text-[60px] font-primary font-semibold uppercase leading-[1]'>
-            <span className='text-white mr-4'>I am a</span>
+            <span className='text-white mr-4'>Eu sou um</span>
             <TypeAnimation
               sequence={[
-                'Developer Backend',
+                'Desenvolvedor Backend',
                 2000,
-                'Developer Frontend',
+                'Desenvolvedor Frontend',
                 2000,
-                'Full Stack Developer',
+                'Desenvolvedor Full Stack',
                 2000,
               ]}
               speed={50}
@@ -46,8 +46,7 @@ const Banner = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
             className='mb-6 text-[36px] lg:text-[41px] font-secondary leading-[1]'>
-            I create web applications with a focus on performance and user
-            experience.
+            E crio aplicações web com foco em desempenho e experiência do usuário.
           </motion.p>
           <motion.div
             variants={fadeIn('down', 0.3)}
@@ -56,7 +55,7 @@ const Banner = () => {
             viewport={{ once: false, amount: 0.7 }}
           >
             <button className='btn btn-lg'>
-              Contact Me
+              Entre em contato
             </button>
           </motion.div>
           <motion.div

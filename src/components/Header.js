@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../assets/logo.png';
-import Profile from '../assets/services.png'; // Temporarily using logo as profile image
+import Profile from '../assets/profile.png'; // Temporarily using logo as profile image
 
 
 const Header = () => {

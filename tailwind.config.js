@@ -25,6 +25,22 @@ module.exports = {
       backgroundImage: {
         site: "url('./assets/site-bg2.png')",
         services: "url('./assets/services.png')",
+        'services-masked': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./assets/services.png')",
+        'services-faded': "linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)), url('./assets/services.png')",
+      },
+      backgroundSize: {
+        'cover-dimmed': 'cover',
+        'contain-centered': 'contain',
+      },
+      backgroundPosition: {
+        'center-top': 'center top',
+        'center-bottom': 'center bottom',
+      },
+      opacity: {
+        '15': '0.15',
+        '25': '0.25',
+        '35': '0.35',
+        '85': '0.85',
       },
     },
   },
