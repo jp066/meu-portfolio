@@ -55,8 +55,9 @@ const Banner = () => {
             viewport={{ once: false, amount: 0.7 }}
           >
             <button className='btn btn-lg'>
-              Entre em contato
+              <a href='#contact'>Entre em contato</a>
             </button>
+            
           </motion.div>
           <motion.div
             variants={fadeIn('down', 0.3)}

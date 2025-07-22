@@ -42,13 +42,56 @@ const About = () => {
           </div>
           <div>
             <div className='text-[40px] font-tertiary text-gradient mb-2'>
-              {inView ? <CountUp start={0} end={3} duration={2} /> : null}
+              {inView ? <CountUp start={0} end={10} duration={2} /> : null}
             </div>
             <div className='font-primary text-sm tracking-[2px]'>
-              habilidades
+              Tecnologias dominadas
             </div>
           </div>
         </div>
+
+        {/* Skills */}
+        <motion.div
+          variants={fadeIn('up', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.3 }}
+          className='mt-8'
+        >
+          <h4 className='h4 mb-4'>Habilidades Técnicas</h4>
+          <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+            <div className='bg-white/10 rounded-lg p-3 backdrop-blur-sm'>
+              <span className='text-sm font-medium'>Python</span>
+            </div>
+            <div className='bg-white/10 rounded-lg p-3 backdrop-blur-sm'>
+              <span className='text-sm font-medium'>Django</span>
+            </div>
+            <div className='bg-white/10 rounded-lg p-3 backdrop-blur-sm'>
+              <span className='text-sm font-medium'>Django Rest framework</span>
+            </div>
+            <div className='bg-white/10 rounded-lg p-3 backdrop-blur-sm'>
+              <span className='text-sm font-medium'>Fast API</span>
+            </div>
+            <div className='bg-white/10 rounded-lg p-3 backdrop-blur-sm'>
+              <span className='text-sm font-medium'>JavaScript</span>
+            </div>
+            <div className='bg-white/10 rounded-lg p-3 backdrop-blur-sm'>
+              <span className='text-sm font-medium'>TypeScript</span>
+            </div>
+            <div className='bg-white/10 rounded-lg p-3 backdrop-blur-sm'>
+              <span className='text-sm font-medium'>Nest js</span>
+            </div>
+            <div className='bg-white/10 rounded-lg p-3 backdrop-blur-sm'>
+              <span className='text-sm font-medium'>React.js</span>
+            </div>
+            <div className='bg-white/10 rounded-lg p-3 backdrop-blur-sm'>
+              <span className='text-sm font-medium'>Node.js</span>
+            </div>
+            <div className='bg-white/10 rounded-lg p-3 backdrop-blur-sm'>
+              <span className='text-sm font-medium'>SQL Server</span>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
