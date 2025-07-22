@@ -7,8 +7,8 @@ import { fadeIn } from '../variants';
 
 const Banner = () => {
   return (
-    <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center ' id='home'>
-      <div className='container mx-auto'>
+    <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center py-12 sm:py-16 md:py-20 lg:py-24' id='home'>
+      <div className='container mx-auto px-4 sm:px-6 md:px-8 lg:px-12'>
         <div className='flex-1 text-center font-secondary lg:text-left'>{/* Main content area */}
           <motion.h1
             variants={fadeIn('down', 0.3)}
