@@ -36,7 +36,9 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <button className='btn btn-sm header-transition btn-transition'> Trabalhe comigo </button>
+            <button className='btn btn-sm header-transition btn-transition'>
+              <a href='#contact'>Trabalhe comigo</a>
+            </button>
           </div>
         </div>
       </div>

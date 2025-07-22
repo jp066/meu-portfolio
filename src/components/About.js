@@ -17,10 +17,10 @@ const About = () => {
           Sobre mim.
         </h2>
         <h3 className='h3 mb-2'>
-          Sou um desenvolvedor full-stack com paixão por criar aplicações web dinâmicas e responsivas. Com experiência em tecnologias tanto de front-end quanto de back-end, busco oferecer experiências de usuário perfeitas e funcionalidades robustas.
+          Desenvolvedor full-stack especializado em transformar conceitos complexos em soluções digitais elegantes e eficientes. Domino tanto o ecossistema frontend quanto backend, criando aplicações escaláveis que combinam performance técnica com experiência excepcional do usuário.
         </h3>
         <p className='mb-1'>
-          Gosto de trabalhar com tecnologias e frameworks modernos, e estou sempre ansioso para aprender novas habilidades e aprimorar meu ofício. Vamos construir algo incrível juntos!
+          Apaixonado por tecnologias emergentes e arquiteturas modernas, estou constantemente evoluindo minhas habilidades para entregar soluções inovadoras. Cada projeto é uma oportunidade de superar expectativas e criar impacto real.
         </p>
         {/* Stats */}
         <div className='flex gap-x-6 lg:gap-x-10 mt-1'>

@@ -46,7 +46,7 @@ const Banner = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
             className='mb-6 text-[36px] lg:text-[41px] font-secondary leading-[1]'>
-            E crio aplicações web com foco em desempenho e experiência do usuário.
+            Transformo ideias em soluções digitais inovadoras e de alto desempenho.
           </motion.p>
           <motion.div
             variants={fadeIn('down', 0.3)}
@@ -57,7 +57,7 @@ const Banner = () => {
             <button className='btn btn-lg'>
               <a href='#contact'>Entre em contato</a>
             </button>
-            
+
           </motion.div>
           <motion.div
             variants={fadeIn('down', 0.3)}
